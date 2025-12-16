@@ -4,83 +4,179 @@
 
 <head>
 
-    <meta charset="UTF-8">
+  <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TroxCoin – Official Website</title>
 
-    <title>TroxCoin | Official Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles.css">
+
+
+  <link rel="stylesheet" href="styles.css" />
+
+
+
+  <meta name="description" content="TroxCoin (TROX) is a next-generation decentralized token built on Base. Secure, transparent, and community-driven." />
 
 </head>
+
+
 
 <body>
 
 
 
-    <header>
+<header class="hero">
 
-        <img src="logo.png" alt="TroxCoin Logo" class="logo">
+  <img src="logo.png" alt="TroxCoin Logo" class="logo" />
 
-        <h1>TROXCOIN</h1>
+  <h1>TroxCoin</h1>
 
-        <p>The future of decentralized power.</p>
-
-    </header>
+  <p>The Future of Decentralized Value on Base</p>
 
 
 
-    <section class="about">
+  <div class="buttons">
 
-        <h2>About TroxCoin</h2>
+    <a href="#buy" class="btn primary">Buy TROX</a>
 
-        <p>TroxCoin is a next-generation digital asset built for speed, security, and community growth. 
+    <a href="#add" class="btn">Add to MetaMask</a>
 
-        Designed to evolve beyond standard meme coins, TroxCoin aims to become a true ecosystem powered by innovation and transparency.</p>
+  </div>
 
-    </section>
-
-
-
-    <section class="tokenomics">
-
-        <h2>Tokenomics</h2>
-
-        <ul>
-
-            <li><strong>Total Supply:</strong> 10,000,000,000 TROX</li>
-
-            <li><strong>Owner Supply:</strong> 9,000,000,000 TROX</li>
-
-            <li><strong>Liquidity Supply:</strong> 1,000,000,000 TROX</li>
-
-            <li><strong>Burning Tradition:</strong> Trox Burn Day – every month</li>
-
-        </ul>
-
-    </section>
+</header>
 
 
 
-    <section class="links">
+<section class="section">
 
-        <h2>Important Links</h2>
+  <h2>About TroxCoin</h2>
 
-        <a href="#" class="btn">Buy TROX</a>
+  <p>
 
-        <a href="https://basescan.org/token/0x66c77CaA665dE352E2358c0C0bf7E6A3e815a047" class="btn">View on BaseScan</a>
+    TroxCoin (TROX) is a decentralized digital asset built on the Base network.
 
-        <a href="#" class="btn">Whitepaper</a>
+    Designed for transparency, long-term growth, and real utility.
 
-    </section>
+  </p>
+
+</section>
 
 
 
-    <footer>
+<section class="section">
 
-        <p>© 2025 TroxCoin. All rights reserved.</p>
+  <h2>Token Details</h2>
 
-    </footer>
+  <ul>
+
+    <li><strong>Name:</strong> TroxCoin</li>
+
+    <li><strong>Symbol:</strong> TROX</li>
+
+    <li><strong>Network:</strong> Base</li>
+
+    <li><strong>Total Supply:</strong> 10,000,000,000</li>
+
+    <li><strong>Contract:</strong> <code>0x66c77CaA665dE352E2358c0C0bf7E6A3e815a047</code></li>
+
+  </ul>
+
+</section>
+
+
+
+<section class="section" id="buy">
+
+  <h2>Buy TroxCoin</h2>
+
+  <p>
+
+    TroxCoin is available on decentralized exchanges.
+
+  </p>
+
+  <a href="https://pancakeswap.finance/swap?chain=base&outputCurrency=0x66c77CaA665dE352E2358c0C0bf7E6A3e815a047" class="btn primary">Buy on DEX</a>
+
+</section>
+
+
+
+<section class="section" id="roadmap">
+
+  <h2>Roadmap</h2>
+
+  <ol>
+
+    <li>✔ Token Launch</li>
+
+    <li>✔ Liquidity Added</li>
+
+    <li>🔜 Listings & Tracking Platforms</li>
+
+    <li>🔜 Ecosystem Expansion</li>
+
+    <li>🔜 Long-term Utility</li>
+
+  </ol>
+
+</section>
+
+
+
+<section class="section" id="add">
+
+  <h2>Add TROX to MetaMask</h2>
+
+  <button class="btn" onclick="addToken()">Add Token</button>
+
+</section>
+
+
+
+<footer>
+
+  <p>© 2025 TroxCoin. All rights reserved.</p>
+
+</footer>
+
+
+
+<script>
+
+async function addToken() {
+
+  if (window.ethereum) {
+
+    await window.ethereum.request({
+
+      method: 'wallet_watchAsset',
+
+      params: {
+
+        type: 'ERC20',
+
+        options: {
+
+          address: '0x66c77CaA665dE352E2358c0C0bf7E6A3e815a047',
+
+          symbol: 'TROX',
+
+          decimals: 18,
+
+          image: 'https://troxcoin.github.io/logo.png'
+
+        }
+
+      }
+
+    });
+
+  }
+
+}
+
+</script>
 
 
 
