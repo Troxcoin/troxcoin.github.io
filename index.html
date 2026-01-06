@@ -1,185 +1,120 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TroxCoin</title>
 
-  <meta charset="UTF-8" />
+<!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <title>TroxCoin – Official Website</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-
-
-  <link rel="stylesheet" href="styles.css" />
-
-
-
-  <meta name="description" content="TroxCoin (TROX) is a next-generation decentralized token built on Base. Secure, transparent, and community-driven." />
-
+<link rel="stylesheet" href="styles.css" />
 </head>
-
-
-
 <body>
 
-
-
-<header class="hero">
-
-  <img src="logo.png" alt="TroxCoin Logo" class="logo" />
-
-  <h1>TroxCoin</h1>
-
-  <p>The Future of Decentralized Value on Base</p>
-
-
-
-  <div class="buttons">
-
-    <a href="#buy" class="btn primary">Buy TROX</a>
-
-    <a href="#add" class="btn">Add to MetaMask</a>
-
-  </div>
-
+<!-- NAV -->
+<header class="nav">
+<div class="container nav-inner">
+<div class="logo">
+<img src="logo.png" alt="TroxCoin Logo">
+</div>
+<nav>
+<a href="#about">About</a>
+<a href="#token">Token</a>
+<a href="#roadmap">Roadmap</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
 </header>
 
-
-
-<section class="section">
-
-  <h2>About TroxCoin</h2>
-
-  <p>
-
-    TroxCoin (TROX) is a decentralized digital asset built on the Base network.
-
-    Designed for transparency, long-term growth, and real utility.
-
-  </p>
-
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-inner">
+<h1>Building Long-Term Value<br>With Discipline and Transparency</h1>
+<p>
+TroxCoin is a luxury-grade crypto project built on Base, focused on sustainable growth,
+trust, and long-term vision — not hype.
+</p>
+<div class="hero-buttons">
+<a class="btn primary" href="#">Add to MetaMask</a>
+<a class="btn secondary" href="#">Buy on PancakeSwap</a>
+</div>
+</div>
 </section>
 
-
-
-<section class="section">
-
-  <h2>Token Details</h2>
-
-  <ul>
-
-    <li><strong>Name:</strong> TroxCoin</li>
-
-    <li><strong>Symbol:</strong> TROX</li>
-
-    <li><strong>Network:</strong> Base</li>
-
-    <li><strong>Total Supply:</strong> 10,000,000,000</li>
-
-    <li><strong>Contract:</strong> <code>0x66c77CaA665dE352E2358c0C0bf7E6A3e815a047</code></li>
-
-  </ul>
-
+<!-- TRUST -->
+<section class="trust" id="about">
+<div class="container trust-grid">
+<div class="trust-card">
+<h3>Transparency</h3>
+<p>Public smart contract and verifiable on-chain data.</p>
+</div>
+<div class="trust-card">
+<h3>Discipline</h3>
+<p>No rushed launches, no artificial hype cycles.</p>
+</div>
+<div class="trust-card">
+<h3>Long-Term Vision</h3>
+<p>Designed to scale sustainably over years, not weeks.</p>
+</div>
+</div>
 </section>
 
-
-
-<section class="section" id="buy">
-
-  <h2>Buy TroxCoin</h2>
-
-  <p>
-
-    TroxCoin is available on decentralized exchanges.
-
-  </p>
-
-  <a href="https://pancakeswap.finance/swap?chain=base&outputCurrency=0x66c77CaA665dE352E2358c0C0bf7E6A3e815a047" class="btn primary">Buy on DEX</a>
-
+<!-- TOKEN -->
+<section class="token" id="token">
+<div class="container token-grid">
+<div class="token-item">
+<span>Network</span>
+<strong>Base</strong>
+</div>
+<div class="token-item">
+<span>Symbol</span>
+<strong>TROX</strong>
+</div>
+<div class="token-item">
+<span>Total Supply</span>
+<strong>10,000,000,000</strong>
+</div>
+<div class="token-item">
+<span>Contract</span>
+<strong class="contract">
+0x66c77CaA665dE352E2358c0C0bf7E6A3e815a047
+</strong>
+</div>
+</div>
 </section>
 
-
-
-<section class="section" id="roadmap">
-
-  <h2>Roadmap</h2>
-
-  <ol>
-
-    <li>✔ Token Launch</li>
-
-    <li>✔ Liquidity Added</li>
-
-    <li>🔜 Listings & Tracking Platforms</li>
-
-    <li>🔜 Ecosystem Expansion</li>
-
-    <li>🔜 Long-term Utility</li>
-
-  </ol>
-
+<!-- ROADMAP -->
+<section class="roadmap" id="roadmap">
+<div class="container roadmap-grid">
+<div class="roadmap-phase">
+<h4>Phase 1</h4>
+<p>Foundation, liquidity, branding, website.</p>
+</div>
+<div class="roadmap-phase">
+<h4>Phase 2</h4>
+<p>Visibility, listings, controlled exposure.</p>
+</div>
+<div class="roadmap-phase">
+<h4>Phase 3</h4>
+<p>NFTs, ecosystem expansion, utilities.</p>
+</div>
+</div>
 </section>
 
-
-
-<section class="section" id="add">
-
-  <h2>Add TROX to MetaMask</h2>
-
-  <button class="btn" onclick="addToken()">Add Token</button>
-
-</section>
-
-
-
-<footer>
-
-  <p>© 2025 TroxCoin. All rights reserved.</p>
-
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+<div class="container footer-inner">
+<p>© 2026 TroxCoin. All rights reserved.</p>
+<div class="footer-links">
+<a href="#">X</a>
+<a href="#">Instagram</a>
+<a href="mailto:troxcoin@gmail.com">Email</a>
+</div>
+</div>
 </footer>
 
-
-
-<script>
-
-async function addToken() {
-
-  if (window.ethereum) {
-
-    await window.ethereum.request({
-
-      method: 'wallet_watchAsset',
-
-      params: {
-
-        type: 'ERC20',
-
-        options: {
-
-          address: '0x66c77CaA665dE352E2358c0C0bf7E6A3e815a047',
-
-          symbol: 'TROX',
-
-          decimals: 18,
-
-          image: 'https://troxcoin.github.io/logo.png'
-
-        }
-
-      }
-
-    });
-
-  }
-
-}
-
-</script>
-
-
-
 </body>
-
 </html>
